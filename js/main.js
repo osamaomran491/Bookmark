@@ -4,6 +4,10 @@ localStorage.getItem("siteLists") == null ? (siteLists = []) : siteLists = (JSON
 var SiteName = document.getElementById("SiteName");
 var SiteURL = document.getElementById("SiteURL");
 var submitButton = document.getElementById("submitButton");
+function localStorageUpdate(){
+    localStorage.setItem("siteLists" , JSON.stringify(siteLists))
+
+}
 function Submit() {
     if(siteLists){
      var list = {
