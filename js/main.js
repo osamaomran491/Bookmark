@@ -39,13 +39,12 @@ function deleteList(index){
     siteLists.splice(index,1)
     localStorageUpdate()
     showLists(siteLists);
-    }
-    function clearInputs(){
+}
+function clearInputs(){
         SiteName.value= '';
         SiteURL.value= '';
-    }
-    function visitSite(index){
+}
+function visitSite(index){
         SiteName=siteLists[index].Name
         SiteURL=siteLists[index].Link
-    }
-    /*ttdffyfyu*/
+}
