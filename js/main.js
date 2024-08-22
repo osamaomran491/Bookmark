@@ -27,7 +27,6 @@ function Submit() {
    cartona += ` <tr>
     <td>${i}</td>
     <td>${siteLists[i].newName ? siteLists[i].newName : siteLists[i].Name}</td>
-    <td>${siteLists[i].Link}</td>
     <td><button onclick="visitSite(${siteLists[i].link})" class="btn btn-warning">Visit</button></td>
     <td><button onclick="deleteList(${i})" class="btn btn-danger">Delete</button></td>
    </tr>
@@ -44,7 +43,6 @@ function clearInputs(){
         SiteName.value= '';
         SiteURL.value= '';
 }
-function visitSite(index){
-        SiteName=siteLists[index].Name
-        SiteURL=siteLists[index].Link
+function visitSite(Link){
+        window.open(Link);
 }
