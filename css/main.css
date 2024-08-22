@@ -1,0 +1,41 @@
+body{
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: rgb(233, 210, 212);
+    color: black;
+}
+.btn style{
+    border-radius: 7px;
+}
+h1{    
+    font-family:  "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    position: relative;
+    }
+h1::before {
+    content: "";
+    position: absolute;
+    width: 265px;
+    height: 18%;
+    bottom: 10px;
+    background-color: #fec260;
+    z-index: -1;
+}
+h1:hover::before {
+    height: 30%;
+    background-color: #fec260; 
+    transition: height 350ms;
+}
+h3.gradient {
+    font-weight: bold; 
+    background: linear-gradient(120deg, #42a55b, #dad465);
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+}
+label{
+    font-weight: bolder;
+}
+.btn button{
+    border-radius: 7px;
+}

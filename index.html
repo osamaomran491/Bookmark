@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container p-5 justify-content-center align-items-center" >
+    <h1 class="text-center pt-5 mb-5">
+        Bookmarker
+    </h1>
+    <hr>
+    <h3 class="gradient text-center"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i></h3>
+    <div class="form-group m-4">
+        <label for="SiteName">Site Name</label>
+        <input  type="text" name="" id=" SiteName" class="form-control" placeholder="Bookmark Name">
+        <p class="text-danger d-none">Please Enter First Capital Charcater</p>
+    </div>
+    <div class="form-group m-4">
+        <label for="SiteURL">Site URL</label>
+        <input  type="text" name="" id="SiteURL" class="form-control" placeholder="Website URL">
+        <p class="text-danger d-none">Please Website URL</p>
+    </div>
+    </div>
+    <div class="btn d-flex justify-content-center align-items-center">
+        <button type="submit"onclick="Submit()"class="btn btn-dark px-5 mt-4" id="submitButton">Submit</button>
+    </div> 
+    <hr>
+        <table id="table" class="table mt-3 text-center bg-light">
+    <thead>
+        <th class="text-capitalize">Index</th>
+        <th class="text-capitalize">Website Name</th>
+        <th class="text-capitalize">Visit</th>
+        <th class="text-capitalize">Delete</th>
+
+    </thead>
+    <tbody id="detials"></tbody>
+</table>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
