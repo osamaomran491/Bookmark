@@ -48,3 +48,4 @@ function deleteList(index){
         SiteName=siteLists[index].Name
         SiteURL=siteLists[index].Link
     }
+    /*neaufbeabf*/
