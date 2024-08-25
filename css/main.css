@@ -1,6 +1,6 @@
 body{
     font-family: "PT Sans Caption", sans-serif;
-    background-color: rgb(233, 210, 212);
+   background-color: #F7ECDE;
     color: black;
 }
 .btn style{
@@ -29,9 +29,9 @@ h1:hover::before {
 }
 h3.gradient {
     font-weight: bold; 
-    background: linear-gradient(120deg, #42a55b, #dad465);
-    -webkit-text-fill-color: transparent; 
-    background-clip: text; 
+    background-image: linear-gradient(to right, #3EA55C, #B2AC49);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 label{
     font-weight: bolder;

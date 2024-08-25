@@ -7,30 +7,40 @@
   <title>Bookmark</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container p-5 justify-content-center align-items-center" >
+  <div class="container p-5 justify-content-center align-items-center " >
     <h1 class="text-center pt-5 mb-5">
         Bookmarker
     </h1>
     <hr>
-    <h3 class="gradient text-center"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i></h3>
+    <h3 class="gradient text-center">
+  <i class="fa-solid fa-bookmark"></i>        
+  Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark"></i>
+    </h3>
     <div class="form-group m-4">
+        <i class="fa-solid fa-book-bookmark"></i>
         <label for="SiteName">Site Name</label>
         <input  type="text" name="" id="SiteName" class="form-control" placeholder="Bookmark Name">
         <p class="text-danger d-none">Please Enter First Capital Charcater</p>
     </div>
     <div class="form-group m-4">
+        <i class="fa-solid fa-link"></i>
         <label for="SiteURL">Site URL</label>
         <input  type="text" name="" id="SiteURL" class="form-control" placeholder="Website URL">
         <p class="text-danger d-none">Please Website URL</p>
     </div>
     </div>
     <div class="btn d-flex justify-content-center align-items-center">
-        <button type="submit"onclick="Submit()"class="btn btn-dark px-5 mt-4" id="submitButton">Submit</button>
+        <button type="submit"onclick="Submit()"class="btn btn-danger px-5 mt-4" id="submitButton">Submit</button>
     </div> 
     <hr>
-        <table id="table" class="table mt-3 text-center bg-light">
+        <table id="table" class="table mt-4 text-center bg-light">
     <thead>
         <th class="text-capitalize">Index</th>
         <th class="text-capitalize">Website Name</th>

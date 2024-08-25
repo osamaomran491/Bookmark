@@ -12,7 +12,7 @@ function Submit() {
     if(siteLists){
      var list = {
          Name: SiteName.value,
-         Link: SiteURL.value,
+         Link: SiteURL.value
      };
      siteLists.push(list)
      localStorageUpdate()
@@ -27,7 +27,7 @@ function Submit() {
    cartona += ` <tr>
     <td>${i}</td>
     <td>${siteLists[i].newName ? siteLists[i].newName : siteLists[i].Name}</td>
-    <td><button onclick="visitSite(${siteLists[i].link})" class="btn btn-warning">Visit</button></td>
+    <td><button onclick="visitSite(${i})" class="btn btn-warning">Visit</button></td>
     <td><button onclick="deleteList(${i})" class="btn btn-danger">Delete</button></td>
    </tr>
 `
@@ -43,6 +43,13 @@ function clearInputs(){
         SiteName.value= '';
         SiteURL.value= '';
 }
-function visitSite(Link){
-        window.open(Link);
+function visitSite(index) {
+    const siteURL = siteLists[index].Link;
+    if (!siteURL.startsWith('http://') && !siteURL.startsWith('https://')) {
+        window.open('http://' + siteURL, '_blank');
+    } else {
+        window.open(siteURL, '_blank');
+    }
 }
+
+        
